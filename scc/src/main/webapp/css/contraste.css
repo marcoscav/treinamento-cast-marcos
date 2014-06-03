@@ -1,0 +1,495 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* GERAL */
+
+.acessibilidade body{
+	background-color:#333333 !important;
+	color:#fff !important;
+}
+
+.acessibilidade .top_margin {
+    margin-top: 20px;
+	*margin-top: 19px; _margin-top: 19px; #margin-top: 19px;
+}
+
+.acessibilidade .box_botoes_acessibilidade {
+    background-color: #000000;
+}
+
+  /* tooltip styling. by default the element to be styled is .tooltip  */
+  .acessibilidade .tooltip {
+    display:none;
+    background-color:#ff0000;
+    font-size:12px;
+    height:auto;
+    width:auto;
+    padding:25px;
+    color:#eee;
+  }
+    /* style the trigger elements */
+  .acessibilidade #demo img {
+    border:0;
+    cursor:pointer;
+    margin:0 1px;
+  }
+  
+  .acessibilidade #demo ul li a {
+    border:0;
+    cursor:pointer;
+    margin:0 1px;
+  }
+
+.acessibilidade h1,.acessibilidade h2{
+    color: #fff !important;
+}
+
+.acessibilidade .geral > .BoxConteudoPrincipal > h1, .acessibilidade .geral > .BoxConteudoPrincipal > h2{
+	background-image:url(../images/sfb_icon_h1Contraste.png) !important;	
+}
+
+.acessibilidade h3{
+	color:#ffffff !important;
+}
+
+.acessibilidade #BoxAreaLogin_EsqueceuEmail a{
+	color:#000;	
+}
+
+.acessibilidade .logoSFB a{
+	background-image:url(../images/sfb_logo_loginContraste.png);	
+}
+
+.acessibilidade #BoxAreaLogin_content .email, .acessibilidade #BoxAreaLogin_content .senha{
+	border:#333 solid 1px;
+	color:#000 !important;	
+}
+
+.acessibilidade .tit_SISAUD{
+	color: #ffffff;
+    float: left;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 21px;
+    margin-top: 16px;
+}
+
+.acessibilidade h4{
+	margin:0;
+	padding:0;
+	color:#ffffff;
+	font-size:14px;
+	line-height:21px;
+	float:left;
+	width: 100%;
+}
+
+.acessibilidade h5{
+	margin:0;
+	padding:0;
+	color:#ffffff;
+	font-size:10px;
+	line-height:21px;
+}
+
+.acessibilidade .listaExemplo {
+	display: inline-block;
+    float: left;
+    min-height: 180px;
+    min-width: 220px;
+    width: auto;
+	border-right: 1px dotted #d7d7d7;
+	border-bottom: 1px dotted #d7d7d7;
+	margin-bottom:5px;
+	
+}
+
+.acessibilidade .listaUltimo {
+	border-right:none !important;
+}
+
+.acessibilidade .listaExemplo label {
+	float: none !important;
+}
+
+.acessibilidade .listaExemplo li {
+	list-style: none;
+	line-height: 29px;
+}
+
+.acessibilidade .lista_box_fit{
+	border-right: 1px solid #FFFFFF;
+    margin-right: 5px;
+    min-height: 266px;
+    width: 156px;
+}
+
+.formulario_conjuntodecampos{
+    float: left;
+    margin: 0 auto;
+    margin-left: 34px;
+    width: 870px;
+}
+
+.acessibilidade .topoGeralInterna{
+	background-image:url(../images/sfb_bg_topintContraste.png);	
+}
+
+.acessibilidade .logo_sfb{
+	background-image:url(../images/sfb_logoContraste.png);	
+}
+
+.acessibilidade .BoxRodapeFuncionalidades, .acessibilidade .BoxRodapeFuncionalidades p{
+	background-image:url(../images/sfb_bg_footerContraste.png);
+	color:#ffffff !important;	
+}
+
+.acessibilidade .formulario fieldset {
+    background-color: #232323;
+    border-color: #D8D8D8;
+    border-radius: 5px 5px 5px 5px;
+    border-style: solid;
+    border-width: 1px;
+    height: auto;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    /*padding: 10px;*/
+	color:#d0d0d0;
+}
+
+.acessibilidade .formulario fieldset p, .acessibilidade .formulario fieldset p span, .acessibilidade .formulario fieldset ul li, .acessibilidade .formulario fieldset ol li{
+	color:#d0d0d0 !important;	
+}
+
+.acessibilidade .formulario legend{
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: -1px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.acessibilidade .formulario .rotulo{
+	color: #fff !important;
+	font-weight:bold !important;
+}
+	
+.acessibilidade .formulario .rotulo2 {
+	color:#ffffff !important;
+}
+	
+.acessibilidade .formulario label{
+	color: #ffffff !important;
+    float: left;
+    text-align: right;
+    width: auto;
+	/*margin: 0px 10px 0px 0px;*/
+}
+	
+.acessibilidade .formulario_button {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+
+.acessibilidade .formulario_button:hover {
+    background-color: #666666;
+}
+
+.acessibilidade .formulario_button:disabled{
+	background-color:#F3F3F3;
+	color:#999;
+}
+
+.acessibilidade .geral{
+	background-color: #333 !important;
+	background-image:none !important;
+    margin: auto;
+    width: 100%;
+	float:left;
+}
+
+.acessibilidade #topo_geral{
+	background-color: #333;
+    /*background-image: url("../images/bg_topo_sistema.jpg");*/
+    background-repeat: repeat-x;
+    height: 95px;
+    margin: auto;
+    position: relative;
+    width: 100%;
+}
+
+.acessibilidade .topo_geral_alinhamento{
+	width:930px;
+	height:95px;
+	position:relative;
+	margin:auto;
+}
+
+.acessibilidade .barra{
+	background-image:none;
+	background-color:#000;
+}
+
+.acessibilidade .barra_brasil_alinhamento {
+    height: 26px;
+    margin: auto;
+    width: 930px;
+}
+
+.acessibilidade .barra_brasil {
+    height: 26px;
+    margin: auto;
+    width: 100%;
+	height: 26px;
+    margin: auto;
+    width: 100%;
+	/*background-image:url("../images/bg_barra_brasil_ac.jpg");
+	background-repeat:repeat-x;*/
+	background-color:#000;
+}
+
+.acessibilidade .BoxMenuPrincipal{
+	background-color: #000;
+	background-image:none;
+	border-bottom-color:#666;
+    /*border-top: 1px solid #64A3CB;*/
+    display: block;
+    height: auto;
+    margin: auto;
+    min-height: 31px;
+    width: 100%;
+}
+
+/*.acessibilidade .BoxConteudoPrincipal span{
+	color:#ffffff !important;
+
+}*/
+
+.acessibilidade #BoxDadosPessoais{
+   color:#ffffff;
+}
+
+.acessibilidade #BoxDadosPessoais p{
+   color:#fff;
+}
+
+.acessibilidade .BoxConteudoPrincipal_migalha a{
+	color:#eee !important;
+	text-decoration:none;
+}
+
+.acessibilidade .BoxConteudoPrincipal_migalha p{
+	color: #fff !important;
+    margin: 0;
+    padding: 0;
+}
+
+.acessibilidade .BoxConteudoPrincipal_migalha span{
+	color:#ffffff;
+}
+
+.acessibilidade #BoxRodapePrincipal{
+	background-color: #000 !important;
+    border-top: 1px solid #FFCC00;
+}
+
+.acessibilidade .box_status span {
+    color: #ffffff;
+}
+
+.acessibilidade .boxMigalha{
+	background-color:#888888;
+	color:#fff;	
+}
+
+.acessibilidade .BoxConteudoPrincipal{
+	color:#ffffff !important;	
+}
+
+
+/* MENU */
+
+.acessibilidade .BoxMenuPrincipal_alinhamento{
+	height: auto;
+	min-height:31px;
+    width: 950px;
+	display: block;
+}
+
+
+.acessibilidade .sf-menu li:hover{
+	background-color:		#999999;
+}
+
+
+
+/* Páginas de erro */
+
+.acessibilidade .ErroAcessoNegado {
+    color: #333333;
+}
+
+.acessibilidade .ErroTexto02 {
+    color: #515151;
+}
+
+.acessibilidade .ErroCodigo {
+    color: #333333;
+}
+
+.acessibilidade .ErroTexto {
+    color: #515151;
+}
+
+.acessibilidade .ErroLegenda {
+    color: #000000;
+}
+
+/* Barra de Ferramentas - Menu rapido */
+
+.acessibilidade .conteudo_redes a
+{
+    background-image:url(../images/icones_juntos_c.png);
+}
+
+/* Mensagens de Erro */
+
+.acessibilidade .msgINFO {
+    color: #ffffff;
+}
+
+.acessibilidade .msgInformativa {
+    color: #ffffff;
+}
+
+.acessibilidade .msgERROR {
+    color: #ffffff;
+}
+
+.acessibilidade .msgAlerta {
+    color: #ffffff;
+}
+
+.acessibilidade .sf-menu li:hover, .acessibilidade .sf-menu a:focus, .acessibilidade .sf-menu a:hover, .acessibilidade .sf-menu a:active {
+	background-color: #565756;
+	outline:0;
+	color:#fff !important;
+}
+
+.acessibilidade .sf-menu li > li:hover, .acessibilidade .sf-menu a:focus, .acessibilidade .sf-menu a:hover, .acessibilidade .sf-menu a:active {
+	background-color: #6a6b6a;
+	outline:0;
+	color:#fff !important;
+}
+
+.acessibilidade .sf-menu li li{
+	background: none repeat scroll 0 0 #aeb0ad;
+}
+.acessibilidade .sf-menu li li li{
+	background:	#aeb0ad;
+}
+
+.acessibilidade .sf-menu li li li li{
+	background:	#aeb0ad;
+}
+
+.acessibilidade .sf-menu li li a, .acessibilidade .sf-menu li li li a, .acessibilidade .sf-menu li li li li a{
+	color:#222 !important;
+}
+
+.acessibilidade .listaModulos > ul > a > li{
+	background:#ddd;
+	color:#000 !important;
+}
+
+.acessibilidade .listaModulos > ul > a > li:hover{
+	background:#616161;	
+	color:#fff !important;
+}
+
+
+/* Grid Resultados */
+
+.acessibilidade .boxGrid {
+    background-color: #333333;
+}
+
+
+.acessibilidade .tabelaSimples table {
+    background-color: transparent;
+}
+
+.acessibilidade .tabelaSimples th {
+    color: #FFFFFF;
+}
+
+
+
+.acessibilidade .tabelaSimples td {
+    background-color: transparent !important;
+    color: #ffffff;
+}
+
+.acessibilidade .tabelaSimples tr {
+    background-color: transparent;
+    transition-duration: 0.5s;
+    transition-property: background-color;
+}
+
+.acessibilidade .listra {
+    background-color: #737373 !important;
+}
+
+.acessibilidade .tabelaSimples tr:hover {
+    background-color: #b1b1b1 !important;
+}
+
+.acessibilidade .msgsAlertas ul {
+	border-radius: 5px 5px 5px 5px;
+	border:1px solid #D8D8D8;
+	background-color: #FFF;
+	padding:6px 0px 0px 6px;
+	margin-left: -0px;
+}
+
+.acessibilidade .paginacao span,.acessibilidade .paginacao strong  {
+	color:#f8f8f8 !important;
+}
+
+.acessibilidade .w_blue{ 
+	background-color:#656767 !important;
+}
+
+.acessibilidade .boxCheckbox {
+	height: 145px !important;
+	overflow-y: scroll !important;
+}
+
+.acessibilidade .boxCheckbox label {
+	width: 158px !important;
+	text-align:left !important;
+}
+
+.acessibilidade .top_margin23 {
+	margin-top:28px !important;
+}
+
+.acessibilidade .ui-state-active a, .ui-state-active a:visited {
+	background-color:#232323 !important;
+	color:#FFFFFF !important;
+}
+
+.acessibilidade .ui-tabs-panel{
+	background-color:#232323 !important;
+	color:#FFFFFF !important;
+}
+
+.acessibilidade .ui-tabs .ui-tabs-nav li a,.acessibilidade .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a {
+	color:#FFFFFF !important;
+}
+
+.acessibilidade .formulario .obrigatorio {
+	color:#ffffff !important;
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<wicket:extend>
+	<div class="BoxConteudoPrincipal">
+		<!-- titulo pagina -->
+		<h2 class="tituloPrincipal">Cadastro de Veículo</h2>
+		<!-- fim titulo -->
+
+		<div class="container_16 float_l">
+
+			<!-- inicio formulario -->
+			<form method="get" class="formulario" action="#" wicket:id="formularioPesquisaVeiculo">
+				<div class="sombraBox">
+					<div class="container_16 msgsAlertas delta10">
+						<ul tabindex="1" class="feedbackPanel" wicket:id="msgErro">
+							<li class="msgERRO feedbackPanelERROR"></li>
+						</ul>
+						<ul tabindex="1" class="feedbackPanel" wicket:id="msgSucesso">
+						</ul>
+					</div>
+				</div>
+				<fieldset>
+					<legend>PESQUISA VEÍCULO</legend>
+
+					<div class="clear"></div>
+
+					<div class="grid_6">
+						<span class="rotulo">Tipo:</span> <select class="grid_layout" wicket:id="TpVeiculo">
+						</select>
+					</div>
+									
+					<div class="grid_4" id="boxFluvial" wicket:id="boxFluvial" >
+						<label class="rotulo" for="nuEmbarcacao" >N° Embarcação:</label> 
+						<input type="text" class="grid_layout" value="" id="nuEmbarcacao" wicket:id="nuEmbarcacao" />
+					</div>
+					
+ 					<div class="grid_3" id="boxTerrestre" wicket:id="boxTerrestre" >
+ 						<label class="rotulo" for="rntrc">RNTRC:</label> 
+ 						<input type="text" class="grid_layout" value="" id="rntrc" wicket:id="rntrc" />
+						<label class="rotulo" for="placa">Placa:</label>
+						<input type="text" class="grid_layout" value="" id="placa" wicket:id="placa"/>
+ 					</div>
+ 					
+ 					
+ 					<div class="grid_3">
+ 						<span class="rotulo" for="">Status:</span>
+ 						<div class="grid_3 alpha omega">
+							<!-- <label class="float_l omega10" for="ativo"> -->
+								<span wicket:id="status" ></span>
+							<!-- 	Ativo 						</label> -->
+<!-- 							<label for="inativo"> -->
+<!-- 								<input type="radio" name="status" value="Lorem" id="inativo" />Inativo -->
+<!-- 							</label> -->
+ 						</div>
+ 					</div>
+
+					<div class="clear"></div>
+
+
+					<!-- fim formulario -->
+				</fieldset>
+				<div class="float_r beta10">
+					<input type="button" class="formulario_button" value="Limpar" name="Limpar" wicket:id="limpar" /> 
+					<input type="button" class="formulario_button" value="Pesquisar" name="Pesquisar"
+							wicket:id="pesquisar" /> 
+					<input type="button" class="formulario_button" value="Novo" name="Novo" wicket:id="incluirVeiculo" />
+				</div>
+
+				<div class="clear"></div>
+
+
+				<!-- inicio da grid resultados -->
+
+				<div class="sombraBox beta10">
+					<div class="container_16 boxGrid" style="font-size: 12px;" wicket:id="resultados" >
+
+						<div class="tabelaSimples texto_normal">
+
+							<table width="100%" cellspacing="1">
+								<caption>Título da Tabela</caption>
+								<thead>
+									<tr>
+										<th id="tipo">Tipo<a title="Ordenar Crescente"
+											class="ordenarAZ" href="#">ordernar</a></th>
+										<th id="nuEmbarcacao">Nº Embarcação<a title="Ordenar Crescente"
+											class="ordenarAZ" href="#">ordernar</a></th>
+										<th id="placa">Placa<a title="Ordenar Decrescente"
+											class="ordenarZA" href="#">ordernar</a></th>
+										<th id="rntrc">RNTRC<a title="Ordenar Decrescente"
+											class="ordenarZA" href="#">ordernar</a></th>
+										<th id="status">Status<a title="Ordenar Decrescente"
+											class="ordenarZA" href="#">ordernar</a></th>
+										<th id="acoes" width="10%">Ações</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="listra" wicket:id="veiculos" >
+										<td headers="tipo" wicket:id="tpVeiculo.descricao" ></td>
+										<td headers="nuEmbarcacao" wicket:id="nuEmbarcacao" ></td>
+										<td headers="placa" wicket:id="placa1" ></td>
+										<td headers="rntrc" wicket:id="rntrc" ></td>
+										<td headers="status" wicket:id="status" ></td>
+										<td headers="acoes">
+											<ul>
+												<li><a title="Editar"
+													class="acoesIcones icoAcaoEditar lightbox" href="#">Editar</a></li>
+												<li><a title="Ativar"
+													class="acoesIcones icoAcaoAtivo lightbox" href="#">Status
+														Ativo</a></li>
+												<li><a title="Inativo"
+													class="acoesIcones icoAcaoInativo lightbox" href="#">Status
+														Inativo</a></li>
+												<li><a title="Excluir"
+													class="acoesIcones icoAcaoExcluir lightbox" href="#">Excluir</a></li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<!-- inicio paginação -->
+
+						<div class="barraFerramentas">
+							<div class="paginacao">
+								<select class="grid_layout float_l">
+									<option>5</option>
+									<option selected="selected">10</option>
+									<option>50</option>
+									<option>100</option>
+								</select> <span>Exibindo <strong>1</strong> - <strong>10</strong>
+									de <strong>62</strong> registros
+								</span>
+								<div class="controlesPaginacao">
+									<ul>
+										<li><a href="#"><img src="images/setaInicio.png"
+												width="16" height="16" alt="Início" title="Início" /></a></li>
+										<li><a href="#"><img src="images/setaVoltar.png"
+												width="16" height="16" alt="Voltar Página"
+												title="Voltar Página" /></a></li>
+										<li class="paginacaoNumero"><input type="text"
+											class="grid_layout grid_1 float_n m0" name="" value=""
+											id="paginacaoNumero" /><label class="float_r"
+											for="paginacaoNumero">de 10</label></li>
+										<li><a href="#"><img src="images/setaAvancar.png"
+												width="16" height="16" alt="Avançar Página"
+												title="Avançar Página" /></a></li>
+										<li><a href="#"><img src="images/setaFim.png"
+												width="16" height="16" alt="Última Página"
+												title="Última Página" /></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- fim da paginacao -->
+
+					</div>
+				</div>
+
+				<!-- fim da grid resultados -->
+
+			</form>
+		</div>
+	</div>
+</wicket:extend>
+</html>

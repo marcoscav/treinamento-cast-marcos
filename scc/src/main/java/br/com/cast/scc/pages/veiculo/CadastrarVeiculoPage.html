@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<wicket:extend>
+	<!-- início conteudo -->
+	<div class="BoxConteudoPrincipal">
+
+
+		<!-- titulo pagina -->
+		<h2 class="tituloPrincipal">Cadastrar Veículo</h2>
+		<!-- fim titulo -->
+
+		<div class="container_16 float_l">
+
+			<!-- inicio dados do veículo -->
+			<form wicket:id="formulario" class="formulario">
+
+				<div class="sombraBox">
+
+					<div class="container_16 msgsAlertas delta10">
+
+						<ul tabindex="1" class="feedbackPanel" wicket:id="msgErro">
+							<li class="msgERRO feedbackPanelERROR"></li>
+						</ul>
+						<ul tabindex="1" class="feedbackPanel" wicket:id="msgSucesso">
+						</ul>
+
+						<fieldset>
+
+							<legend>DADOS DO VEÍCULO</legend>
+
+							<div class="clear"></div>
+
+							<div class="grid_6">
+								<span class="rotulo"><span class="obrigatorio">*</span>Tipo:</span>
+								<select class="grid_layout" wicket:id="TpVeiculo"></select>
+							</div>
+
+							<div class="grid_4" wicket:id="boxFluvial">
+								<label class="rotulo" for="nuEmbarcacao"><span class="obrigatorio">*</span>N° Embarcação:</label>
+								<input type="text" class="grid_layout" value=""
+									id="nuEmbarcacao" wicket:id="nuEmbarcacao" />
+							</div>
+							<div class="grid_4" wicket:id="boxTerrestre">
+								<label class="rotulo" for="rntrc"><span class="obrigatorio">*</span>RNTRC:</label> 
+								<input type="text" class="grid_layout" value="" id="rntrc" wicket:id="rntrc" /> 
+								<label class="rotulo" for="placa1"><span class="obrigatorio">*</span>Placa1:</label>
+								<input type="text" class="grid_layout" value="" id="placa1" wicket:id="placa1" />
+								<label class="rotulo" for="placa2">Placa2:</label>
+								<input type="text" class="grid_layout" value="" id="placa2" wicket:id="placa2" />
+								<label class="rotulo" for="placa3">Placa3:</label>
+								<input type="text" class="grid_layout" value="" id="placa3" wicket:id="placa3" />
+								<label class="rotulo" for="placa4">Placa4:</label>
+								<input type="text" class="grid_layout" value="" id="placa4" wicket:id="placa4" />
+							</div>
+							<div class="clear"></div>
+
+						</fieldset>
+					</div>
+
+				</div>
+				<!-- fim dados do veículo -->
+
+
+				<div class="clear"></div>
+
+				<!-- DADOS DE RASTREAMENTO -->
+				<div class="sombraBox">
+					<div class="container_16 msgsAlertas">
+						<fieldset>
+
+							<legend>DADOS DE RASTREAMENTO</legend>
+
+							<div class="clear"></div>
+
+							<div class="grid_10">
+								<label class="rotulo" for="endAcessoLink">
+								<span class="obrigatorio">*</span>Endereço de Acesso/link</label>
+								<input type="text" class="grid_layout" wicket:id="endAcessoLink" id="endAcessoLink" />
+							</div>
+
+							<div class="grid_3">
+								<label class="rotulo" for="numero_embacacao">
+								<span class="obrigatorio">*</span>Login de acesso</label>
+								<input type="text" class="grid_layout" value="" id="numero_embacacao" />
+							</div>
+
+							<div class="grid_3">
+								<label class="rotulo" for="senha_acesso">
+								<span class="obrigatorio">*</span>Senha de acesso</label>
+								<input type="text" class="grid_layout" value="" id="senha_acesso" />
+							</div>
+
+							<div class="clear"></div>
+
+						</fieldset>
+					</div>
+				</div>
+				<!-- FIM DADOS DE RASTREAMENTO -->
+
+
+				<div class="float_r beta10">
+					<input type="button" class="formulario_button" value="Voltar"
+						name="Voltar" /> <input type="button" class="formulario_button"
+						value="Salvar" name="Salvar" />
+				</div>
+
+			</form>
+			<!-- fim formulario -->
+		</div>
+
+
+	</div>
+	<!-- fim conteúdo -->
+</wicket:extend>
+</html>
